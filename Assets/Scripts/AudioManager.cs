@@ -12,7 +12,7 @@ public class AudioManager : MonoBehaviour
 
     AudioSource audioSource;
 
-    void OnValidate()
+    private void Awake()
     {
         if (audioSource == null) audioSource = GetComponent<AudioSource>();
     }
